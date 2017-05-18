@@ -4,7 +4,15 @@ app.directive('menu', function(){
 	return {
 		templateUrl: '../directives/menu.html',
 		restrict: 'E',
-		replace: true
+		replace: true,
+		link: () => {
+      smoothScroll.init({
+      	speed: 1000,
+      	easing: 'easeInOutQuint'
+      })
+
+			angular.element(document).ready(gumshoe.init)
+		}
 	}
 })
 
@@ -12,7 +20,10 @@ app.directive('cover', function(){
 	return {
 		templateUrl: '../directives/cover.html',
 		restrict: 'E',
-		replace: true
+		replace: true,
+		link: () => {
+			new Rellax('.rellax')
+		}
 	}
 })
 
@@ -44,17 +55,6 @@ app.directive('contact', function(){
 	return {
 		templateUrl: '../directives/contact.html',
 		restrict: 'E',
-		replace: true,
-		link: () => {
-			smoothScroll.init({
-				speed: 1000,
-				easing: 'easeInOutQuint'
-			})
-
-			gumshoe.init()
-
-			new Rellax('.rellax')
-		}
+		replace: true
 	}
 })
-

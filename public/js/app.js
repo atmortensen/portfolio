@@ -5,13 +5,22 @@ app.directive('menu', function(){
 		templateUrl: '../directives/menu.html',
 		restrict: 'E',
 		replace: true,
-		link: () => {
-      smoothScroll.init({
-      	speed: 1000,
-      	easing: 'easeInOutQuint'
-      })
+		link: (scope, element) => {
+        smoothScroll.init({
+        	speed: 2500,
+        	easing: 'easeInOutQuint',
+        	offset: element[0].offsetHeight - 5
+        })
 
-			angular.element(document).ready(gumshoe.init)
+        angular.element(document)[0].addEventListener('scroll', () => {
+        	angular.element(document).find('body')[0].scrollTop < 75 ?
+	        	element.addClass('at-top') : element.removeClass('at-top')
+        })
+
+				angular.element(document).ready(() => {
+					new Rellax('.rellax')
+					gumshoe.init()
+				})
 		}
 	}
 })
@@ -20,10 +29,7 @@ app.directive('cover', function(){
 	return {
 		templateUrl: '../directives/cover.html',
 		restrict: 'E',
-		replace: true,
-		link: () => {
-			new Rellax('.rellax')
-		}
+		replace: true
 	}
 })
 

@@ -3,11 +3,11 @@
 #menu {
 	background: $dark;
 	z-index: 100;
-	color: $light;
 	width: 100%;
 	position: fixed;
 	border-bottom: 1px solid $grey;
 	text-transform: uppercase;
+	transition: .8s all;
 	.light {
 		font-weight: lighter;
 	}
@@ -31,4 +31,10 @@
 	li.active {
 		background: $grey;
 	}
+}
+
+#menu.at-top {
+	background: none;
+	border: none;
+	padding: 15px;
 }

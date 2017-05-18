@@ -6,7 +6,6 @@
 	overflow: hidden;
 	position: relative;
 	.text {
-		color: $light;
 		position: absolute;
 		top: 35%;
 		width: 100%;
@@ -26,16 +25,16 @@
 	}
 	.gradient {
 		position: absolute;
-		top: 5px;
+		bottom: -5px;
     background: 
     linear-gradient(to bottom, 
-			rgba(0,0,0,0.3) 0%, 
-			rgba(0,0,0,0.3) 90%, 
+			rgba(0,0,0,0.35) 0%, 
+			rgba(0,0,0,0.35) 90%, 
 			rgba(0,0,0,1) 98%, 
 			rgba(0,0,0,1) 100%);
     z-index: 20;
 		min-width: 100%;
-		min-height: 100vh;
+		min-height: calc(100vh + 5px);
 	}
 	img {
 		position: absolute;

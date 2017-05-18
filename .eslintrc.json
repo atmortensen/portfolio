@@ -1,0 +1,9 @@
+{
+    "globals": {
+      "angular": 1,
+      "app": true,
+      "Rellax": 1,
+      "smoothScroll": 1,
+      "gumshoe": 1
+    }
+}

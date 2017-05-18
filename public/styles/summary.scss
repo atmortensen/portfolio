@@ -1,0 +1,19 @@
+@import "main";
+
+#summary {
+	padding: 0 150px;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	color: $light;
+	text-align: center;
+	h1 {
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 1.3em;
+		padding-top: 20px;
+	}
+}

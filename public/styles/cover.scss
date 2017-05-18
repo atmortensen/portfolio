@@ -1,0 +1,48 @@
+@import "main";
+
+#cover {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	.text {
+		color: $light;
+		position: absolute;
+		top: 35%;
+		width: 100%;
+		text-align: center;
+		z-index: 50;
+		background: rgba(0,0,0,0.6);
+		padding: 15px 0 30px 0;
+		h1 {
+			font-size: 4em;
+			font-weight: normal;
+		}
+		h2 {
+			font-weight: normal;
+			font-size: 2em;
+			padding-top: 15px;
+		}
+	}
+	.gradient {
+		position: absolute;
+		top: 5px;
+    background: 
+    linear-gradient(to bottom, 
+			rgba(0,0,0,0.3) 0%, 
+			rgba(0,0,0,0.3) 90%, 
+			rgba(0,0,0,1) 98%, 
+			rgba(0,0,0,1) 100%);
+    z-index: 20;
+		min-width: 100%;
+		min-height: 100vh;
+	}
+	img {
+		position: absolute;
+    left: -100%;
+    right: -100%;
+    margin: auto;
+		min-width: 100%;
+		min-height: 100vh;
+	}
+}

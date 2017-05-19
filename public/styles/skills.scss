@@ -2,5 +2,27 @@
 
 #skills {
 	min-height: 100vh;
-	
+	fill: $light;
+	h1 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.card {
+			width: 160px;
+			padding: 25px;
+			text-align: center;
+			p {
+				margin-bottom: 10px;
+				font-size: 1.2em;
+				letter-spacing: 1px;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
 }

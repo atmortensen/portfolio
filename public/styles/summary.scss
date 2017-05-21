@@ -1,18 +1,32 @@
 @import "main";
 
-#summary {
+.summary {
 	padding: 0 150px;
-	min-height: 90vh;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
+	padding: 100px;
+	img {
+		padding: 5px;
+		width: 200px;
+		border: 1px solid $green;
+		margin: 0 auto;
+		display: block;
+	}
 	h1 {
 		text-transform: uppercase;
 	}
 	p {
-		font-size: 1.3em;
-		padding-top: 20px;
+		font-size: 1.2em;
+		letter-spacing: 0px;
+		padding-top: 15px;
+		font-family: Georgia,'Times New Roman',serif;
+		.green {
+			color: $green;
+		}
+	}
+	.links {
+		margin: 20px auto;
+		.button {
+			margin: 0 5px;
+		}
 	}
 }

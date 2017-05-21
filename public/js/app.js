@@ -7,15 +7,14 @@ app.directive('menu', function(){
 		replace: true,
 		link: (scope, element) => {
         smoothScroll.init({
-        	speed: 2500,
-        	easing: 'easeInOutQuint',
-        	offset: element[0].offsetHeight - 5
+        	speed: 2000
         })
 
-        angular.element(document)[0].addEventListener('scroll', () => {
+        const animateMenu = () => {
         	angular.element(document).find('body')[0].scrollTop < 75 ?
 	        	element.addClass('at-top') : element.removeClass('at-top')
-        })
+        }
+        angular.element(document)[0].addEventListener('scroll', animateMenu)
 
 				angular.element(document).ready(() => {
 					new Rellax('.rellax')

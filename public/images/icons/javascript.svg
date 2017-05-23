@@ -7,7 +7,8 @@
 <metadata>
 Created by potrace 1.10, written by Peter Selinger 2001-2011
 </metadata>
-<g transform="translate(0.000000,1052.000000) scale(0.100000,-0.100000)" 
+<rect height="100%" width="100%" fill="#FFF" />
+<g fill="#000" transform="translate(0.000000,1052.000000) scale(0.100000,-0.100000)" 
 stroke="none">
 <path d="M7840 5740 c-378 -30 -695 -166 -931 -400 -243 -241 -359 -535 -359
 -908 0 -558 229 -948 740 -1257 130 -78 307 -163 613 -295 417 -179 572 -264
@@ -26,4 +27,6 @@ stroke="none">
 900 -119 1271 30 445 180 706 552 775 1105 6 56 10 681 10 1857 l0 1773 -490
 0 -489 0 -4 -1767z"/>
 </g>
+
+
 </svg>

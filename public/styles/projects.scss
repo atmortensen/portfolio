@@ -1,0 +1,31 @@
+@import "main";
+
+.projects {
+	padding: 100px 0;
+	h1 {
+		text-align: center;
+		text-transform: uppercase;
+		padding-bottom: 5px;
+	}
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		.card {
+			width: 46%;
+			margin: 2%;
+			border: 1px $green solid;
+			padding: 5px;
+			.info {
+				// background: #FFF;
+				// color: black;
+				// border: 3px #FFF solid;
+				// border-top: none;
+			}
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}

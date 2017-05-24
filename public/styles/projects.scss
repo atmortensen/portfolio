@@ -25,6 +25,11 @@
 			img {
 				display: block;
 				width: 100%;
+				filter: grayscale(100%);
+				transition: all .3s;
+				&:hover {
+					filter: none;
+				}
 			}
 		}
 	}

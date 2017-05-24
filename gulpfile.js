@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 		autoprefixer = require('gulp-autoprefixer')
 
 gulp.task('scripts', function(){
-	gulp.src('public/js/*.js')
+	gulp.src('public/js/app.js')
 	.pipe(plumber())
 	.pipe(babel({presets: ['es2015']}))
 	.pipe(uglify())

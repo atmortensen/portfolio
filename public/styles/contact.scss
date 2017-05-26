@@ -16,6 +16,10 @@
 		max-width: 500px;
 		margin: auto;
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		justify-content: center;
+		.button {
+			margin: 5px;
+		}
 	}
 }

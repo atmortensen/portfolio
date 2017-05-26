@@ -22,6 +22,9 @@
 			padding: 5px;
 			display: flex;
 			flex-direction: column;
+			@media (max-width: $breakpoint) {
+				width: 100%;
+			}
 			h3 {
 				background: rgba(255, 255, 255, 0.05);
 				padding: 8px;
@@ -46,9 +49,18 @@
 				.buttons {
 					display: flex;
 					justify-content: space-between;
+					@media (max-width: $breakpoint) {
+						flex-wrap: wrap;
+						justify-content: center;
+					}
 					.button {
 						font-size: 1.1em;
 						padding: 5px 10px;
+						@media (max-width: $breakpoint) {
+							font-size: 1em;
+							padding: 7px;
+							margin: 5px;
+						}
 					}
 				}
 			}

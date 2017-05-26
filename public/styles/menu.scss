@@ -15,6 +15,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 0;
 	}
 	li {
 		float: left;
@@ -23,6 +24,9 @@
 		letter-spacing: 2px;
 		padding: 15px;
 		transition: .5s background;
+		@media (max-width: $breakpoint) {
+			display: none;
+		}
 	}
 	a {
 		color: inherit;

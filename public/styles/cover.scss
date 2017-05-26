@@ -17,6 +17,9 @@
 			font-size: 4em;
 			font-weight: normal;
 			padding-bottom: 10px;
+			@media (max-width: $breakpoint) {
+				font-size: 3.5em;
+			}
 		}
 		h2 {
 			font-weight: normal;

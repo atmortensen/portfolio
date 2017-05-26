@@ -23,6 +23,11 @@
 		p {
 			padding: 5px 0 15px 0;
 		}
+		.badge {
+			@media (max-width: $breakpoint) {
+				width: 100%;
+			}
+		}
 	}
 	.cards {
 		display: flex;
@@ -37,6 +42,10 @@
 			text-align: center;
 			border: 1px $green solid;
 			background: rgba(255, 255, 255, 0.05);
+			@media (max-width: $breakpoint) {
+				width: 120px;
+				font-size: .7em;
+			}
 			&:hover {
 				background: rgba(255, 255, 255, 0.1);
 			}

@@ -26,9 +26,10 @@ h1, h2, h3, h4 {
 .container {
 	width: 1000px;
 	margin: auto;
+	padding: 100px 0;
 	@media (max-width: $breakpoint) {
 		width: 100%;
-		padding: 100px 10px;
+		padding: 65px 10px;
 	}
 }
 
@@ -58,13 +59,24 @@ h1, h2, h3, h4 {
 	overflow: hidden;
 	position: relative;
 	@media (max-width: $breakpoint) {
-		height: 30vw;
+		height: 35vw;
 	}
 	img {
 		position: absolute;
-		display: block;
 		bottom: -30%;
 		width: 100%;
+	}
+	.mobile {
+		display: none;
+		@media (max-width: $breakpoint) {
+			display: block;
+		}
+	}
+	.not-mobile {
+		display: block;
+		@media (max-width: $breakpoint) {
+			display: none;
+		}
 	}
 }
 

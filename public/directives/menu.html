@@ -1,7 +1,11 @@
-<div id="menu" class="at-top" data-gumshoe-header>
+<div id="menu" class="at-top" data-gumshoe-header ng-init="dropped=''">
 	<div class="container">
 		<h2><span class="light">Alex</span> Mortensen</h2>
-		<ul data-gumshoe>
+		<a class="dropdown" ng-click="dropped ? dropped='' : dropped='dropped'">
+			<i ng-show="!dropped" class="fa fa-bars"></i>
+			<i ng-show="dropped" class="fa fa-times"></i>
+		</a>
+		<ul class={{dropped}} data-gumshoe>
 			<li><a data-scroll href="#summary">Summary</a></li>
 			<li><a data-scroll href="#skills">Skills</a></li>
 			<li><a data-scroll href="#projects">Projects</a></li>

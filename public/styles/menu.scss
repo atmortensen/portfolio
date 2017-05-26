@@ -1,6 +1,13 @@
 @import "main";
 
 #menu {
+	&.at-top {
+		@media (min-width: $breakpoint) {
+			background: none;
+			border: none;
+			padding: 15px;
+		}
+	}
 	background: $dark;
 	z-index: 100;
 	width: 100%;
@@ -8,6 +15,19 @@
 	border-bottom: 1px solid $grey;
 	text-transform: uppercase;
 	transition: .8s all;
+	.dropdown {
+		display: none;
+		@media (max-width: $breakpoint) {
+			display: block;
+			font-size: 1.2em;
+			padding-right: 10px;
+		}
+	}
+	h2 {
+		@media (max-width: $breakpoint) {
+			padding: 10px;
+		}
+	}
 	.light {
 		font-weight: lighter;
 	}
@@ -16,6 +36,20 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 0;
+		@media (max-width: $breakpoint) {
+			flex-wrap: wrap;
+		}
+	}
+	ul {
+		@media (max-width: $breakpoint) {
+			transition: all .5s;
+			width: 100%;
+			overflow: hidden;
+			height: 0;
+			&.dropped {
+				height: 204px;
+			}
+		}
 	}
 	li {
 		float: left;
@@ -25,7 +59,7 @@
 		padding: 15px;
 		transition: .5s background;
 		@media (max-width: $breakpoint) {
-			display: none;
+			width: 100%;
 		}
 	}
 	a {
@@ -35,10 +69,4 @@
 	li.active {
 		background: $grey;
 	}
-}
-
-#menu.at-top {
-	background: none;
-	border: none;
-	padding: 15px;
 }

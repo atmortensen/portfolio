@@ -1,7 +1,6 @@
 @import "main";
 
 .projects {
-	padding: 100px 0;
 	h1 {
 		text-align: center;
 		text-transform: uppercase;
@@ -58,7 +57,7 @@
 						padding: 5px 10px;
 						@media (max-width: $breakpoint) {
 							font-size: 1em;
-							padding: 7px;
+							padding: 3px 7px;
 							margin: 5px;
 						}
 					}

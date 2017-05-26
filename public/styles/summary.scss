@@ -2,10 +2,6 @@
 
 .summary {
 	text-align: center;
-	padding: 100px;
-	@media (max-width: $breakpoint) {
-		padding: 100px 10px;
-	}
 	img {
 		padding: 5px;
 		width: 200px;

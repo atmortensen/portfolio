@@ -11,8 +11,12 @@ app.directive('menu', function(){
         })
 
         const animateMenu = () => {
-        	angular.element(document).find('body')[0].scrollTop < 75 ?
-	        	element.addClass('at-top') : element.removeClass('at-top')
+					const scrollPos = window.pageYOffset || document.documentElement.scrollTop
+        	if (scrollPos < 75) {
+						element.addClass('at-top')
+					 } else {
+						 element.removeClass('at-top')
+					 }
         }
         angular.element(document)[0].addEventListener('scroll', animateMenu)
 
